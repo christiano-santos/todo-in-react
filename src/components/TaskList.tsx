@@ -36,6 +36,7 @@ export function TaskList() {
   }
 
   useEffect(() => {
+    document.getElementsByTagName('input')[0].value = '';
     console.log(tasks);
   }, [tasks]);
 

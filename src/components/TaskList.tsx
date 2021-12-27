@@ -16,7 +16,7 @@ export function TaskList() {
 
   //função retorna um numero radom e verifica se existe algum id igual ao radom gerado, caso sim a função
   //chama ela mesma para gerar outro radom
-  function radomIdTask() {
+  function radomIdTask():number {
 
     let radomId = Math.floor(Math.random() * 100);
     let equalId = false;

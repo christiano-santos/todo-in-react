@@ -52,9 +52,8 @@ export function TaskList() {
         },
       ]);
     }else{
-      alert("Favor informar uma tarefa com 5 caracteres ou mais.");
+      alert("Task deve conter 5 caracteres ou mais.");
     }
-
   }
 
   function handleToggleTaskCompletion(id: number) {
@@ -65,6 +64,8 @@ export function TaskList() {
         task.isComplete = true;
       }
     });
+
+    setTasks([...tasks]);
 
   }
 
